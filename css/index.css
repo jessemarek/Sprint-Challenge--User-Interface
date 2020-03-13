@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    width: 100%;
 }
 
 html, body {
@@ -68,7 +69,37 @@ p {
 
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: 2% auto 0;
+}
+
+header nav {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.nav-img {
+    width: 30%;
+}
+
+.nav-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 0.25%;
+    margin-left: 7%;
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header-img {
+    width: 100%;
+    margin: 4% 0;
 }
 
 .top-content {
@@ -110,6 +141,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#box1 {
+    background: teal;
+}
+
+#box2 {
+    background: gold;
+}
+
+#box3 {
+    background: cadetblue;
+}
+
+#box4 {
+    background: coral;
+}
+
+#box5 {
+    background: crimson;
+}
+
+#box6 {
+    background: forestgreen;
+}
+
+#box7 {
+    background: darkorchid;
+}
+
+#box8 {
+    background: hotpink;
+}
+
+#box9 {
+    background: indigo;
+}
+
+#box10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
