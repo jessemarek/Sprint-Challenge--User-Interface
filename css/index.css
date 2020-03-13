@@ -109,18 +109,20 @@ header nav {
     text-align: center;
 }
 
-.nav-links a:after {    
-    background: none repeat scroll 0 0 transparent;
+/* Nav Links Animation */
+.nav-links a:after {  
+    display: block;  
+    position: absolute;
     content: "";
-    display: block;
+    background: #000;
+    width: 0;
     height: 2px;
     left: 50%;
     bottom: -6px;
-    position: absolute;
-    background: #000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+
   }
+  
 .nav-links a:hover:after { 
     width: 100%; 
     left: 0; 
@@ -207,6 +209,7 @@ header nav {
     justify-content: center;
 }
 
+/* Colored boxes on home page */
 #box1 {
     background: teal;
 }
@@ -282,17 +285,17 @@ footer nav a {
     position: relative;
 }
 
-footer nav a:after {    
-    background: none repeat scroll 0 0 transparent;
+/* Footer Nav Links Animation */
+footer nav a:after { 
+    display:block;
+    position: absolute;
+    background: #fff;  
     content: "";
-    display: block;
+    width: 0;
     height: 2px;
     left: 50%;
     bottom: -6px;
-    position: absolute;
-    background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
   }
 footer nav a:hover:after { 
     width: 100%; 
