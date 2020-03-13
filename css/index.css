@@ -93,9 +93,28 @@ header nav {
 }
 
 .nav-links a {
+    position: relative;
     color: #000;
     text-decoration: none;
+    text-align: center;
 }
+
+.nav-links a:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    bottom: -6px;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav-links a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 .header-img {
     width: 100%;
