@@ -102,6 +102,14 @@ header nav {
     margin: 4% 0;
 }
 
+.about-text {
+    padding: 2%;
+}
+
+#about-header {
+    border-bottom: 1px dashed #000;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +122,33 @@ header nav {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.about-item {
+    width: 45%;
+    margin: 2%;
+}
+
+.about-item h2, .about-item button {
+    margin-top: 3%;
+}
+
+.about-item button {
+    text-align: center;
+    padding: 2% 3%;
+    width: 30%;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #323232;
+}
+
+.about-item button:hover {
+    cursor: pointer;
+}
+
+.about-item button:active {
+    box-shadow: none;
 }
 
 .middle-content {
