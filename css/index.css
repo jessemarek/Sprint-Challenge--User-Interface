@@ -267,5 +267,24 @@ footer nav {
 
 footer nav a {
     color: white;
+    text-align: center;
     text-decoration: none;
+    position: relative;
 }
+
+footer nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    bottom: -6px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+footer nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
