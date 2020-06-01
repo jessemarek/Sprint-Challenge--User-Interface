@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    width: 100%;
 }
 
 html, body {
@@ -66,9 +67,78 @@ p {
     line-height: 1.4;
 }
 
+img {
+    box-shadow: 5px 5px 8px #323232;
+    border-radius: 7px;
+}
+
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: 2% auto 0;
+}
+
+header nav {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.nav-img {
+    width: 30%;
+}
+
+.nav-img img {
+    box-shadow: none;
+    border-radius: none;
+}
+
+.nav-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 0.25%;
+    margin-left: 7%;
+    font-size: 14px;
+}
+
+.nav-links a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Nav Links Animation */
+.nav-links a:after {  
+    display: block;  
+    position: absolute;
+    content: "";
+    background: #000;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: -6px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+  }
+
+.nav-links a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.header-img {
+    width: 100%;
+    margin: 4% 0;
+}
+
+.about-text {
+    padding: 2%;
+}
+
+#about-header {
+    border-bottom: 1px dashed #000;
 }
 
 .top-content {
@@ -83,6 +153,33 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.about-item {
+    width: 45%;
+    margin: 2%;
+}
+
+.about-item h2, .about-item button {
+    margin-top: 3%;
+}
+
+.about-item button {
+    text-align: center;
+    padding: 2% 3%;
+    width: 30%;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #323232;
+}
+
+.about-item button:hover {
+    cursor: pointer;
+}
+
+.about-item button:active {
+    box-shadow: none;
 }
 
 .middle-content {
@@ -110,6 +207,60 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Colored Box flip animation */
+.box:hover {
+    transform: rotateY(360deg);
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 8px #323232;
+  }
+
+/* Colored boxes on home page */
+#box1 {
+    background: teal;
+}
+
+#box2 {
+    background: gold;
+}
+
+#box3 {
+    background: cadetblue;
+}
+
+#box4 {
+    background: coral;
+}
+
+#box5 {
+    background: crimson;
+}
+
+#box6 {
+    background: forestgreen;
+}
+
+#box7 {
+    background: darkorchid;
+}
+
+#box8 {
+    background: hotpink;
+}
+
+#box9 {
+    background: indigo;
+}
+
+#box10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -142,5 +293,24 @@ footer nav {
 
 footer nav a {
     color: white;
+    text-align: center;
     text-decoration: none;
+    position: relative;
 }
+
+/* Footer Nav Links Animation */
+footer nav a:after { 
+    display:block;
+    position: absolute;
+    background: #fff;  
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: -6px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+footer nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
